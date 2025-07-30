@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Products</h1>
+    <ul>
+        {% for product in products %}
+            <li><strong>{{ product.name }}</strong> - ₹{{ product.price }} ({{ product.category }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

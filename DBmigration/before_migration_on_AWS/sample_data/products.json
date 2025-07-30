@@ -1,0 +1,2 @@
+[{"_id":{"$oid":"687fe067a31c5f1ba789b03d"},"name":"Laptop","price":65000,"category":"Electronics"},{"_id":{"$oid":"687fe067a31c5f1ba789b03e"},"name":"Shoes","price":2500,"category":"Footwear"},{"_id":{"$oid":"687fe067a31c5f1ba789b03f"},"name":"Book","price":450,"category":"Education"}]
+
