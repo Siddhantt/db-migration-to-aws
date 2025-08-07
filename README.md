@@ -6,21 +6,21 @@ This project demonstrates manual migration of a local Flask application that ori
 ✅ Python virtual environment (venv)
 ✅ Manual file copy (no Ansible, no pipeline — focused on learning migration steps)
 🧱 Project Structure
-.
-├── EC2Files/                         # Final working app files on EC2
-│   ├── app.py                        # Flask app (connects to RDS)
-│   ├── products.sql                  # MySQL insert statements (generated from JSON)
-│   ├── requirements.txt              # Flask + PyMySQL
-│   └── templates/
-│       └── index.html                # Jinja2 product display template
 
-├── before_migration_on_AWS/         # Original local version
-│   ├── app.py                        # Flask app using JSON
-│   ├── requirements.txt              # No DB required locally
-│   ├── sample_data/
-│   │   ├── products.json             # Source data
-│   │   ├── products.sql              # Generated MySQL data
-│   │   └── transform_to_sql.py      # Python script to convert JSON → SQL
+EC2Files/                         # Final working app files on EC2
+ app.py                        # Flask app (connects to RDS)
+ products.sql                  # MySQL insert statements (generated from JSON)
+ requirements.txt              # Flask + PyMySQL
+ templates/
+ index.html                # Jinja2 product display template
+
+before_migration_on_AWS/         # Original local version
+ app.py                        # Flask app using JSON
+ requirements.txt              # No DB required locally
+ sample_data/
+ products.json             # Source data
+ products.sql              # Generated MySQL data
+ └── transform_to_sql.py      # Python script to convert JSON → SQL
 │   ├── static/
 │   │   └── style.css
 │   └── templates/
